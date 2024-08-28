@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurador de PC</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">PCBuilder</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="configurador.html">Configurador</a></li>
+                <li><a href="index.html#about">Sobre</a></li>
+                <li><a href="index.html#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="configurator" class="configurator-section">
+        <h2>Montar o Seu PC</h2>
+
+        <div class="selector">
+            <label for="cpu-select">Escolha o Processador:</label>
+            <select id="cpu-select">
+                <option value="">Selecione um processador</option>
+                <option value="556.31">Intel Core i3-10100F - R$ 556,31</option>
+                <option value="800.00">AMD Ryzen 5 5600X - R$ 800,00</option>
+            </select>
+        </div>
+
+        <div class="selector">
+            <label for="gpu-select">Escolha a Placa de Vídeo:</label>
+            <select id="gpu-select">
+                <option value="">Selecione uma placa de vídeo</option>
+                <option value="1200.00">NVIDIA GeForce GTX 1660 - R$ 1200,00</option>
+                <option value="1800.00">AMD Radeon RX 6700 XT - R$ 1800,00</option>
+            </select>
+        </div>
+
+        <div class="selector">
+            <label for="mae-select">Escolha a Placa Mãe</label>
+            <select id="mae-select">
+                <option value="">Selecione uma placa de vídeo</option>
+                <option value="379,90">Placa Mãe Biostar B450MHP, - R$ 379,90</option>
+                <option value="458,90">Placa Mãe ASRock H510M-HVS R2.0 - R$ 458,90</option>
+            </select>
+        </div>
+
+        <div id="priceDisplay">
+            <h3>Valor Total: R$ <span id="totalPrice">0,00</span></h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PCBuilder. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
